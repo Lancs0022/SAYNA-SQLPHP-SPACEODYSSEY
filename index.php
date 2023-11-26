@@ -1,3 +1,6 @@
+<!-- 
+    
+-->
 <?php
     include ("html/entete.html");
     include ("html/navSuperieur.html");
