@@ -79,7 +79,7 @@ function randomDateBetween($startDate, $endDate) {
 
 
 
-$cleApi = ' x8IdyDHLUTgGdXnr5UtSlHaCji9rTQm0jc3ICzh7 ';
+$cleApi = 'x8IdyDHLUTgGdXnr5UtSlHaCji9rTQm0jc3ICzh7';
 $date = '2023-11-26';
 $info = recupAPIInfo($cleApi, $date);
 afficheAPIInfo($info);
