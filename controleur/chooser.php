@@ -3,17 +3,14 @@
     // print_r($_GET);
     // echo '</pre>'; 
 
-if(isset($_GET['choix'], $_GET['ind'])) {
+if(isset($_GET['choix']) && 
+($_GET['choix'] == 'Astronautes' || $_GET['choix'] == 'Missions' || 
+ $_GET['choix'] == 'Vaisseaux' || $_GET['choix'] == 'Planètes')) {
+    
     $choix = $_GET['choix'];
-    $indice = $_GET['ind'];
-    if($indice == 'A'){
-        include("contenus/consult.php");
-    }
-    else if($indice == 'B'){
-        include("contenus/modif.php");
-    }
+    include("contenus/dashboard/dashboard.php");
 }
-else if(isset($_GET['choix']) && !isset($_GET['ind'])){
+else if(isset($_GET['choix']) && $_GET['choix'] == 'Gallerie') {
     include("function/getApi.php");
 }
 else 
